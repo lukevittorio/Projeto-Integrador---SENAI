@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - CodeCraft</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="interacaoservicos.js" defer></script>
+    <script src="modos.js" defer></script>
+
+</head>
+
+<link rel="shortcut icon" type="imagex/png" href="Icon-CodeCraft.ico">
+
+<body id="body">
+
+    <header class="header" id="header">
+
+        <button onclick="toggleSidebar()" class="botao_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+
+        <div class="logo_header">
+            <img src="CodeCraft - Projeto Integrador.png" alt="Logo CodeCraft" class="logo">
+        </div>
+
+        <div class="navegacao_header" id="navegacao_header">
+            
+            <button onclick="toggleSidebar()" class="botao_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+
+            <a href="home.html">Home</a>
+            <a href="servicos.html" class="ativo">Serviços</a>
+            <a href="quem_somos.html">Quem Somos</a>
+            <a href="casos.html">Casos</a>
+            <a href="contato.html">Contato</a>
+
+            <div class="trilho" id="trilho">
+                <div class="indicador"></div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div tabindex="0" class="bannerservicos" onfocus="closeSidebar()" id="bannerservicos"></div>
+
+    <main>
+
+        <div tabindex="0" class="contentservicos" onfocus="closeSidebar()" id="contentservicos">
+
+            <section class="servico2">
+
+                <div class="blocopgs">
+                    <img src="Desenvolvimento e Manutenção de Sistemas.png" alt="Desenvolvimento e Manutenção de Sistemas">
+                </div>
+
+                <div class="textserv">
+                    <h2><i class="bi bi-window"></i><span>Desenvolvimento e Manutenção de Sistemas</span></h2>
+                    <p>Nossa consultoria é uma das especialistas em Manutenção e Desenvolvimento de Sistemas. Nesse sistema buscamos solucionar as necessidasdes de manutenção ou um desenvolvimento de sistema que são indicadas por nossos clientes, realizando integrações, resolução de bugs e constantes melhorias, assim evitando eventuais problemas.</p>
+                    <p>Os nossos clientes podem usufruir de uma equipe que contém os melhores profissionais do mercado para manutenção de sistemas, além de uma equipe completa de desenvolvedores especializados nas mais diversas linguagens de programação, mostrando aos nossos clientes nosso compromisso com a qualidade que lhes é oferecida.</p>
+                    <p>Durante o processo de desenvolvimento, são realizados diversos tipos de testes estruturados, com o objetivo de garantir a melhor qualidade para o nosso cliente; estamos preparados para realizar todos os tipos de testes!</p>
+                    <a href="contato.html"><button>Venha falar conosco e saiba como podemos ajudar!</button></a>
+                </div>
+
+            </section>
+
+            <section class="servico1">
+
+                <div class="textserv">
+                    <h2><i class="bi bi-gear-fill"></i><span>Contrato de Suporte</span></h2>
+                    <p>O serviço de Contrato de Suporte é um suporte técnico padronizado e com prazos de atendimento definidos, seu objetivo consiste em auxiliar nossos clientes a solucionar possíveis situações incômodas com os recursos tecnológicos.</p>
+                    <p>Este tipo de serviço pode ser realizado de forma remota ou presencial por nossa equipe, seguindo as melhores metodologias do mercado e as melhores práticas que possuímos em nosso repertório de procedimentos.</p>
+                    <a href="contato.html"><button>Venha falar conosco e saiba como podemos ajudar!</button></a>
+                </div>
+
+                <div class="blocopgs">
+                    <img src="Contrato de Suporte.png" alt="COntrato de Suporte">
+                </div>
+
+            </section>
+
+            <section class="servico3">
+
+                <div class="blocopgs">
+                    <img src="Big Data e Análise de Dados.png" alt="Big Data e Análise de Dados">
+                </div>
+
+                <div class="textserv">
+                    <h2><i class="bi bi-search"></i><span>Big Data e Análise de Dados</span></h2>
+                    <p>As ferramentas de Big Data tiveram seu desenvolvimento com o objetivo de estruturar e analisar os dados de forma ampla, com uma grande velocidade e variedade dos dados. Em si, o Big Data é definido como uma volumosa massa de dados, com uma alta velocidade de atualização e variedade de dados; por conta dessas caraterísticas ele se torna diferente dos aplicativos e sistemas tradicionais de processamento de dados, pois estes não seriam capazes de minerar e processar de forma adequada.</p>
+                    <p>Estas tecnologias de Big Data permitem que as organizações vão além de suas tradicionais análises.</p>
+                    <p>Se encontra necessário um processo eficiente de análise de dados para as tomadas de decisões dentro do mundo digital; a análise de dados é capaz de orientar e otimizar o planejamento de nossos clientes, assim proporcionando ganhos em todos os aspectos da empresa.</p>
+                    <a href="contato.html"><button>Venha falar conosco e saiba como podemos ajudar!</button></a>
+                </div>
+
+            </section>
+
+            <section class="servico1">
+
+                <div class="textserv">
+                    <h2><i class="bi bi-cloud-fill"></i><span>Infraestrutura e Cloud</span></h2>
+                    <p>Nos tempos atuais, ter uma infraestrutura adequada é extremamente importante para a capacidade de entrega dos negócios. Com o apoio da nossa equipe, sua empresa terá um maior controle sob os recursos tecnológicos que estão a sua disposição.</p>
+                    <p>Contemos também profissionais especialistas na computação em nuvem, que é uma das principais bases da atual economia digital, oferecendo agilidade, mobilidade e escalabilidade. Nossos clientes contam com um planejameto de qualidade, especificação, sustentação, implementação e o gerenciamento dos ambientes em nuvens.</p>
+                    <a href="contato.html"><button>Venha falar conosco e saiba como podemos ajudar!</button></a>
+                </div>
+
+                <div class="blocopgs">
+                    <img src="Infraestrutura e Cloud.png" alt="Infraestrutura e Cloud">
+                </div>
+
+            </section>
+
+            <section class="servico3">
+
+                <div class="blocopgs">
+                    <img src="Digital.png" alt="Digital">
+                </div>
+
+                <div class="textserv">
+                    <h2><i class="bi bi-phone"></i><span>Digital</span></h2>
+                    <p>Neste serviço, nossos clientes podem usufruir das nossas especialidades em Elaboração de Softwares e Aplicações Mobile. Nossa equipe possui experiências em todos os aspectos das implementações, desde sua concepção até a sua implementação, com um desenvolvimento que passa por diversos especialistas, além de ser aprovado pelo próprio cliente.</p>
+                    <p>Temos uma equipe flexível, capaz de desenvolver e implementar as aplicações nas mais diversas plataformas que o cliente possuir.</p>
+                    <a href="contato.html"><button>Venha falar conosco e saiba como podemos ajudar!</button></a>
+                </div>
+
+            </section>
+
+            <section class="servico1">
+
+                <div class="textserv">
+                    <h2><i class="bi bi-shield-lock-fill"></i><span>Segurança da Informação e Consultoria em TI</span></h2>
+                    <p>A Segurança da Informação se tornou um aliado para as empresas, devido a necessidade de manter a segurança de seus dados e informações dos negócios. Nossa empresa conta com a especialização nesta área, utilizando os melhores recursos do mercado, assim mantendo a segurança e privacidade de nossos clientes.</p>
+                    <p>Possuímos os melhores consultores especialistas nas mais modernas metodologias que estão consolidadas no mercado; nossa empresa também busca adequar a sua empresa a Lei Geral de Proteção de Dados (LGPD), que é um marco histórico na proteção dos indivíduos por conta da regulamentação do tratamento de dados pessoais no Brasil, transformando a forma de como as organizações devem utilizar os dados pessoais.</p>
+                    <a href="contato.html"><button>Venha falar conosco e saiba como podemos ajudar!</button></a>
+                </div>
+
+                <div class="blocopgs">
+                    <img src="Segurança da Informação e Consultoria em TI.png" alt="Segurança da Informação e Consultoria em TI">
+                </div>
+
+            </section>
+
+            <footer>
+
+                <div class="line-footer">
+            
+                    <div class="flexfooter">
+            
+                        <div class="logo-footer">
+                            <img src="Logo Footer - CodeCraft.png" alt="Logotipo">
+                        </div>
+            
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="#"><button><i class="bi bi-twitter"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div>
+            
+                    </div>
+            
+                </div>
+    
+                <div class="line-footer borda">
+                    <p><i class="bi bi-envelope-fill"></i><a href="mailto:lukevittorio21@gmail.com">codecraft@gmail.com</a></p>
+                </div>
+            
+            </footer>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

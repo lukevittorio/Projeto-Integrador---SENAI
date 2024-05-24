@@ -1,0 +1,101 @@
+:root{
+    --color-white: #fff;
+    --color-black: black;
+    --color-azul: #01164D;
+    --color-azul2: #004AAD;
+    --color-azul3: #182957;
+    --color-azul4: #38ABFF;
+    --color-azul5: #A1DBFF;
+    --color-azul6: #E4FFFF;
+    --color-body: #1B1A1D;
+}
+
+/* Banner do Home em Carrossel automático */
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid var(--color-azul);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: var(--color-azul);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: var(--color-azul);
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+/* Adaptando para dispositivos móveis */
+@media screen and (max-width: 820px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 33.5%;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div{
+        border: 0.5px solid var(--color-azul);
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}
