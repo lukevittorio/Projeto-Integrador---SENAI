@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos - CodeCraft</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="interacaocasos.js" defer></script>
+    <script src="modos.js" defer></script>
+
+</head>
+
+<link rel="shortcut icon" type="imagex/png" href="Icon-CodeCraft.ico">
+
+<body id="body">
+
+    <header class="header" id="header">
+        
+        <button onclick="toggleSidebar()" class="botao_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+
+        <div class="logo_header">
+            <img src="CodeCraft - Projeto Integrador.png" alt="Logo CodeCraft" class="logo">
+        </div>
+
+        <div class="navegacao_header" id="navegacao_header">
+
+            <button onclick="toggleSidebar()" class="botao_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+
+            <a href="home.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="quem_somos.html">Quem Somos</a>
+            <a href="casos.html" class="ativo">Casos</a>
+            <a href="contato.html">Contato</a>
+
+        </div>
+
+    </header>
+
+    <div tabindex="0" class="bannercasos" onfocus="closeSidebar()" id="bannercasos"></div>
+
+    <main>
+    
+        <div tabindex="0" class="contentcasos" onfocus="closeSidebar()" id="contentcasos">
+
+            <section class="casos">
+
+                <p>Aqui em nossa empresa, prezamos pelo sucesso absoluto de nosso cliente, possuindo mais de 10 casos de sucesso.</p>
+                <p>Tivemos muitos clientes que elogiam e agradecem pelo mosso trabalho, além de se manterem em nossa consultoria até os dias de hoje.</p>
+                <p>Dentre nossos casos de sucesso, possuimos relatórios completos sobre três empresas: SENAI de Tecnologia Mecatrônica, Lego e MasterCard.</p>
+                <h1>Aqui estão algumas das empresas clientes que já solicitaram nosso serviço e obtiveram sucesso absoluto dentro do mercado de trabalho.</h1>
+
+                <div class="flexc">
+
+                    <div class="imgs"><a href="casosenai.html"><img src="1.png"></a></div>
+
+                    <div class="imgs"><img src="2.png"></div>         
+
+                    <div class="imgs"><img src="3.png"></div>            
+
+                    <div class="imgs"><a href="casolego.html"><img src="4.png"></a></div>
+
+                    <div class="imgs"><a href="casomastercard.html"><img src="5.png"></a></div>
+
+                </div>
+
+                <div class="flexc">
+
+                    <div class="imgs"><img src="6.png"></div>
+
+                    <div class="imgs"><img src="7.png"></div>
+
+                    <div class="imgs"><img src="8.png"></div>
+
+                    <div class="imgs"><img src="9.png"></div>
+
+                    <div class="imgs"><img src="10.png"></div>
+
+                </div>
+
+            </section>
+            
+
+            <footer>
+
+                <div class="line-footer">
+            
+                    <div class="flexfooter">
+            
+                        <div class="logo-footer">
+                            <img src="Logo Footer - CodeCraft.png" alt="Logotipo">
+                        </div>
+            
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="#"><button><i class="bi bi-twitter"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div>
+            
+                    </div>
+            
+                </div>
+    
+                <div class="line-footer borda">
+                    <p><i class="bi bi-envelope-fill"></i><a href="mailto:lukevittorio21@gmail.com">codecraft@gmail.com</a></p>
+                </div>
+            
+            </footer>
+        
+        </div>
+
+    </main>
+
+</body>
+
+</html>

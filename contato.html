@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - CodeCraft</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="interacaocontato.js" defer></script>
+    <script src="modos.js" defer></script>
+
+</head>
+
+<link rel="shortcut icon" type="imagex/png" href="Icon-CodeCraft.ico">
+
+<body id="body">
+
+    <header class="header" id="header">
+
+        <button onclick="toggleSidebar()" class="botao_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+
+        <div class="logo_header">
+            <img src="CodeCraft - Projeto Integrador.png" alt="Logo CodeCraft" class="logo">
+        </div>
+
+        <div class="navegacao_header" id="navegacao_header">
+
+            <button onclick="toggleSidebar()" class="botao_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+
+            <a href="home.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="quem_somos.html">Quem Somos</a>
+            <a href="casos.html">Casos</a>
+            <a href="contato.html" class="ativo">Contato</a>
+
+        </div>
+
+    </header>
+
+    <div tabindex="0" class="bannercontato" onfocus="closeSidebar()" id="bannercontato"></div>
+
+    <main>
+        
+        <div tabindex="0" class="contentcontato" onfocus="closeSidebar()" id="contentcontato">
+
+            <section class="formulario" id="contato">
+
+                <h2 class="textform">FALE<span>CONOSCO!</span></h2>
+
+                <form action="https://formsubmit.co/lukevittorio21@gmail.com" method="POST">
+
+                    <input type="text" name="nome" id="" placeholder="Nome Completo:" required>
+                    <input type="text" name="e-mail" id="" placeholder="E-mail:" required>
+                    <input type="text" name="celular" id="" placeholder="Celular:">
+                    <textarea name="mensagem" id="" placeholder="Mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+
+                </form>
+
+            </section>
+
+            <footer>
+
+                <div class="line-footer">
+            
+                    <div class="flexfooter">
+            
+                        <div class="logo-footer">
+                            <img src="Logo Footer - CodeCraft.png" alt="Logotipo">
+                        </div>
+            
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="#"><button><i class="bi bi-twitter"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div>
+            
+                    </div>
+            
+                </div>
+    
+                <div class="line-footer borda">
+                    <p><i class="bi bi-envelope-fill"></i><a href="mailto:lukevittorio21@gmail.com">codecraft@gmail.com</a></p>
+                </div>
+            
+            </footer>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
