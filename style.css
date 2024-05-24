@@ -1,0 +1,1648 @@
+/* Variáveis de Cor, pois se for alterado aqui, todas onde estão sendo utilizadas já são alteradas */
+:root{
+    --color-white: #fff;
+    --color-black: black;
+    --color-azul: #01164D;
+    --color-azul2: #004AAD;
+    --color-azul3: #182957;
+    --color-azul4: #38ABFF;
+    --color-azul5: #A1DBFF;
+    --color-azul6: #E4FFFF;
+    --color-body: #1B1A1D;
+}
+
+/* Seletor universal, utilizado para aplicar estilização em todos os elementos da página */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Definindo o body */
+body{
+    font-family: Tahoma, Arial;
+    background-color: var(--color-white);
+}
+
+/* Definir tamanho do logo */
+.logo{
+    width: 265px;
+}
+
+/* Definir a forma de navegação do header */
+.header,
+.navegacao_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Define a header */
+.header{
+    background-color: var(--color-azul);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 10em;
+    box-shadow: 1px 1px 4px var(--color-azul3);
+}
+
+/* Definir que a navegação sempre estará acima da header */
+.navegacao_header{
+    gap: 3em;
+    z-index: 2;
+}
+
+/* Definição das cores e estilo dos textos da header */
+.navegacao_header a{
+    text-decoration: none;
+    color: var(--color-azul4);
+    transition: 1s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navegacao_header li {
+    list-style-type: none;
+}
+
+/* Definição das cores e estilo dos textos da header, quando interagir com o cursor */
+.navegacao_header a:hover{
+    color: var(--color-azul6);
+    text-transform: uppercase;
+}
+
+/* Classe para mostrar qual a página que está selecionada no momento */
+.ativo{
+    background: var(--color-azul3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Definição para o botão que aparece na header quando o site é redimensionado para o celular */
+.botao_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+/* Definir como o texto vai aparecer com esta determinada classe */
+.contenthome, .contentc{
+    padding-top: 3px;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+
+/* Serviços - Home */
+.text{
+    color: var(--color-azul2);
+    font-size: 38px;
+    text-align: center;
+}
+
+section.servicos{
+    padding: 5% 1% 1% 1%;
+}
+
+section.servicos .flexservicos{
+    justify-content: space-around;
+    padding: 60px 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.bloco{
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-azul5);
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    border: solid 5px var(--color-azul2);
+    box-shadow: 0 0 15px var(--color-azul5);
+    padding: 0 0 0.5% 0;
+}
+
+.bloco .cima{
+    background-color: var(--color-azul2);
+    border-radius: 30px 30px 0 0;
+    color: var(--color-white);
+    font-size: 3.5em;
+    padding: 10px 0 10px;
+}
+
+.bloco .cima h2{
+    font-size: 25px;
+    padding: 5% 0 5%;
+}
+
+.bloco .cima2{
+    background-color: var(--color-azul2);
+    border-radius: 30px 30px 0 0;
+    color: var(--color-white);
+    font-size: 3.5em;
+    padding: 5% 0 5%;
+}
+
+.bloco .cima2 h2{
+    font-size: 25px;
+    padding: 6% 0 6%;
+}
+
+.bloco .baixo p{
+    color: var(--color-azul3);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 8% 8% 8%;
+}
+
+.bloco .baixo2 p{
+    color: var(--color-azul3);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 8% 8% 8%;
+}
+
+section.textobloco{
+    padding: 0 8% 5%;
+    align-items: center
+}
+
+section.textobloco p{
+    font-size: 20px;
+    padding: 1% 0 3%;
+}
+
+.btn-servicos button{
+    width: 340px;
+    height: 40px;
+    border: 0;
+    background-color: var(--color-azul2);
+    text-transform: uppercase;
+    color: var(--color-white);
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-servicos button:hover{
+    box-shadow: 0 0 15px var(--color-azul2);
+}
+
+/* Quem Somos - Home */
+section.quemsomos{
+    background-color: var(--color-azul6);
+    padding: 80px 4% 0.5% 4%;
+    box-shadow: 0 0 40px var(--color-azul4);
+}
+
+.textoquemsomos{
+    font-size: 40px;
+    color: var(--color-azul2);
+}
+
+section.quemsomos p{
+    font-size: 25px;
+    color: var(--color-black);
+    padding: 2%;
+}
+
+.textoquemsomos2{
+    font-size: 50px;
+    color: var(--color-azul2);
+    padding: 2%;
+}
+
+.flexquemsomos{
+    justify-content: space-around;
+    padding: 60px 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.blocoquemsomos{
+    width: 400px;
+    height: 375px;
+    border-radius: 40px;
+    position: relative;
+    padding: 0 0 2% 0;
+}
+
+.blocoquemsomos li{
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    border-radius: 40px;
+    list-style-type: none;
+}
+
+.blocoquemsomos img{
+    width: 200px;
+    padding: 3%;
+}
+
+.blocoquemsomos h2{
+    font-size: 30px;
+    padding: 3%;
+    color: var(--color-white);
+}
+
+.blocoquemsomos i{
+    font-size: 30px;
+    color: var(--color-white);
+}
+
+.blocoquemsomos button{
+    background-color: var(--color-black);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Casos - Home*/
+section.casosh{
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    padding: 30px 4%;
+}
+
+.textcasos{
+    color: var(--color-white);
+    font-size: 38px;
+    text-align: center;
+    padding: 5%;
+}
+
+.blococasos{
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-white);
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 15px var(--color-azul5);
+}
+
+section.casosh .flexcasos{
+    justify-content: space-around;
+    padding: 3% 4% 8% 4%;
+    display: flex;
+    gap: 40px;
+}
+
+.blococasos h2{
+    color: var(--color-azul2);
+    padding: 15% 10% 10% 7%;
+    font-size: 28px;
+}
+
+.blococasos p{
+    color: var(--color-azul);
+    padding: 5% 20%;
+    font-size: 16.5px;
+}
+
+.blococasos a{
+    text-decoration: none;
+}
+
+/* Mapa */
+.mapbox{
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    background: var(--color-azul5);
+    box-shadow: 0 0 17px var(--color-azul4);
+}
+
+.mapbox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.textmap{
+    color: var(--color-azul2);
+    font-size: 34px;
+    padding: 3% 0 2.5% 0;
+}
+
+.endmap{
+    color: var(--color-azul4);
+    font-size: 30px;
+    padding: 1% 0 5% 0;
+}
+
+/* Banner da página Serviços */
+.bannerservicos{
+    background: url('Banner\ Serviços\ -\ CodeCraft.png') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    color: var(--color-white);
+}
+
+/* Serviços */
+.servico1{
+    justify-content: space-around;
+    padding: 5% 2%;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 15px var(--color-azul5);
+    background-color: var(--color-azul5);
+}
+
+.servico3{
+    justify-content: space-around;
+    padding: 5% 2%;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 15px var(--color-azul5);
+}
+
+.servico2{
+    justify-content: space-around;
+    padding: 2% 2% 5% 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.blocopgs{
+    padding: 2.5%;
+}
+
+.blocopgs img{
+    width: 400px;
+    box-shadow: 0 0 15px var(--color-azul4);
+}
+
+.textserv h2{
+    color: var(--color-azul2);
+    font-size: 30px;
+    padding: 0 0 2% 0;
+}
+
+.textserv h2 span{
+    padding: 0 0 0 2%;
+}
+
+.textserv p{
+    color: var(--color-azul);
+    font-size: 18px;
+    padding: 0 2% 3% 2%;
+}
+
+.textserv button{
+    background-color: var(--color-azul4);
+    border: none;
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.textserv button:hover{
+    box-shadow: 0 0 20px var(--color-azul4);
+}
+
+/* Banner da página Quem Somos */
+.bannerquemsomos{
+    background: url('Banner\ Quem\ Somos\ -\ CodeCraft.png') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    color: var(--color-white);
+}
+
+/* Quem Somos */
+.qsluke{
+    justify-content: space-around;
+    padding: 5% 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.qsluke img{
+    width: 400px;
+    border: 3px;
+    border-radius: 50px;
+}
+
+.img{
+    padding: 5%;
+}
+
+.imgfelipe{
+    padding: 5%;
+}
+
+.textqs{
+    padding: 5%;
+}
+
+.textqsfelipe{
+    padding: 5%;
+}
+
+.qsluke .textqs h2{
+    font-size: 38px;
+    padding: 1%;
+    color: var(--color-azul2);
+}
+
+.qsluke .textqs h1{
+    font-size: 30px;
+    padding: 1%;
+    color: var(--color-azul2);
+}
+
+.qsluke .textqs p{
+    font-size: 25px;
+    padding: 1%;
+    color: var(--color-azul);
+}
+
+.qsfelipe{
+    justify-content: space-around;
+    background-color: var(--color-azul5);
+    box-shadow: 0 0 10px var(--color-azul5);
+    padding: 5% 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.qsfelipe img{
+    width: 400px;
+    border: 3px;
+    border-radius: 50px;
+}
+
+.qsfelipe .textqsfelipe h2{
+    font-size: 38px;
+    padding: 1%;
+    color: var(--color-azul2);
+}
+
+.qsfelipe .textqsfelipe h1{
+    font-size: 29px;
+    padding: 1%;
+    color: var(--color-azul2);
+}
+
+.qsfelipe .textqsfelipe p{
+    font-size: 25px;
+    padding: 1%;
+    color: var(--color-azul);
+}
+
+.qspedro{
+    justify-content: space-around;
+    background-color: var(--color-azul2);
+    box-shadow: 0 0 10px var(--color-azul2);
+    padding: 5% 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.qspedro img{
+    width: 400px;
+    border: 3px;
+    border-radius: 50px;
+}
+
+.qspedro .textqs h2{
+    font-size: 38px;
+    padding: 1%;
+    color: var(--color-azul5);
+}
+
+.qspedro .textqs h1{
+    font-size: 30px;
+    padding: 1%;
+    color: var(--color-azul5);
+}
+
+.qspedro .textqs p{
+    font-size: 25px;
+    padding: 1%;
+    color: var(--color-white);
+}
+
+ul.btns{
+    margin: 3%;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+.qsluke ul.btns li{
+    background-color: var(--color-azul2);
+    box-shadow: 0 0 15px var(--color-azul2);
+}
+
+.qsluke ul.btns li .icon{
+    color: var(--color-azul6);
+}
+
+.qsfelipe ul.btns li{
+    background-color: var(--color-azul2);
+    box-shadow: 0 0 15px var(--color-azul2);
+}
+
+.qsfelipe ul.btns li .icon{
+    color: var(--color-white);
+}
+
+.qspedro ul.btns li{
+    background-color: var(--color-azul6);
+    box-shadow: 0 0px 15px var(--color-azul6);
+}
+
+.qspedro ul.btns li .icon{
+    color: var(--color-azul2);
+}
+
+ul.btns li{
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+
+ul.btns li:hover{
+    width: 140px;
+    transition-delay: 0.1s;
+}
+
+ul.btns li span{
+    position: absolute;
+}
+
+ul.btns li .icon{
+    font-size: 1.5em;
+    transition: 0.2s;
+}
+
+ul.btns li .text{
+    color: var(--color-white);
+    font-size: 20px;
+    transform: scale(0);
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+
+ul.btns li:hover .text{
+    transform: scale(1);
+    transition-delay: 0.1s;
+}
+
+ul.btns li:hover .icon{
+    transform: scale(0);
+}
+
+ul.btns li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+    transition-delay: 0.1s;
+}
+
+ul.btns li:hover::before{
+    opacity: 1;
+}
+
+/* Banner da página Casos de Sucesso */
+.bannercasos{
+    background: url('Banner\ Casos\ -\ CodeCraft.png') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    color: var(--color-white);
+}
+
+/* Casos */
+section.casos{
+    padding: 0 5% 5% 5%;
+}
+
+section.casos .flexc{
+    justify-content: space-around;
+    display: flex;
+    padding: 2% 0 2% 0;
+}
+
+.casos img{
+    width: 80%;
+    border-radius: 10%;
+    box-shadow: 0 0 15px var(--color-azul3);
+    transition: 0.5s;
+}
+
+.casos img:hover{
+    width: 83%;
+}
+
+.casos p{
+    color: var(--color-azul4);
+    font-size: 18px;
+    padding: 0.5%;
+    font-weight: bold;
+}
+
+.casos h1{
+    padding: 5% 0 2% 0;
+    color: var(--color-azul2);
+    font-size: 19px;
+}
+
+/* Banner Casos */
+.bannersenai{
+    padding: 5%;
+}
+
+.bannersenai img{
+    width: 100%;
+    box-shadow: 0 0 15px var(--color-azul2);
+    border-radius: 20px;
+}
+
+.bannerlego{
+    padding: 5%;
+}
+
+.bannerlego img{
+    width: 100%;
+    box-shadow: 0 0 15px var(--color-azul2);
+    border-radius: 20px;
+}
+
+.bannermastercard{
+    padding: 5%;
+}
+
+.bannermastercard img{
+    width: 100%;
+    box-shadow: 0 0 15px var(--color-azul2);
+    border-radius: 20px;
+}
+
+/* Páginas extras, Casos */
+section.senai{
+    padding: 2% 5% 5% 5%;
+}
+
+section.senai h2{
+    font-size: 38px;
+    color: var(--color-azul2);
+    padding: 0 5% 2% 5%;
+}
+
+section.senai p{
+    font-size: 23px;
+    color: var(--color-azul3);
+    padding: 0 2% 3% 2%;
+}
+
+section.senai p span{
+    font-size: 23px;
+    text-transform: uppercase;
+    color: var(--color-azul4);
+    font-weight: bold;
+}
+
+section.lego{
+    padding: 2% 5% 5% 5%;
+}
+
+section.lego h2{
+    font-size: 38px;
+    color: var(--color-azul2);
+    padding: 0 5% 2% 5%;
+}
+
+section.lego p{
+    font-size: 23px;
+    color: var(--color-azul3);
+    padding: 0 2% 3% 2%;
+}
+
+section.lego p span{
+    font-size: 23px;
+    text-transform: uppercase;
+    color: var(--color-azul4);
+    font-weight: bold;
+}
+
+section.master{
+    padding: 2% 5% 5% 5%;
+}
+
+section.master h2{
+    font-size: 38px;
+    color: var(--color-azul2);
+    padding: 0 5% 2% 5%;
+}
+
+section.master p{
+    font-size: 23px;
+    color: var(--color-azul3);
+    padding: 0 2% 3% 2%;
+}
+
+section.master p span{
+    font-size: 23px;
+    text-transform: uppercase;
+    color: var(--color-azul4);
+    font-weight: bold;
+}
+
+/* Botões Casos */
+.btn-casos button{
+    width: 400px;
+    height: 60px;
+    border: 0;
+    background-color: var(--color-azul2);
+    text-transform: uppercase;
+    color: var(--color-white);
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.btn-casos button:hover{
+    box-shadow: 0 0 15px var(--color-azul2);
+}
+
+
+/* Banner da página Contato */
+.bannercontato{
+    background: url('Banner\ Contato\ -\ CodeCraft.png') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center; /* Vertical */
+    color: var(--color-white);
+}
+
+/* Definir como o texto vai aparecer com esta determinada classe */
+.contentcontato{
+    text-align: center;
+    transition: 1s;
+}
+
+/* Formulário de Contato */
+section.formulario{
+    padding: 7% 0 7% 0;
+    background-color: var(--color-azul4);
+}
+
+.contentcontato{
+    background-color: var(--color-azul4);
+}
+
+.textform{
+    color: var(--color-white);
+    font-size: 38px;
+    text-align: center;
+}
+
+.textform span {
+    color: var(--color-azul2);
+    padding: 0 0 0 15px;
+}
+
+form{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: var(--color-white);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: var(--color-azul);
+    font-size: 18px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: var(--color-roxo);
+}
+
+form textarea{
+    resize: none;
+    max-width: 900px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 150px;
+    background-color: var(--color-azul3);
+    color: var(--color-white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0 0 15px var(--color-azul3);
+}
+
+/* Definir como o texto vai aparecer com esta determinada classe */
+.contentservicos{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+
+/* Definir como o texto vai aparecer com esta determinada classe */
+.contentquemsomos{
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+
+/* Definir como o texto vai aparecer com esta determinada classe */
+.contentcasos{
+    padding-top: 5em;
+    text-align: center;
+    height: 100vh;
+    transition: 1s;
+}
+
+/* Footer */
+footer{
+    padding: 2%;
+    background-color: var(--color-azul);
+    box-shadow: 0 0 40px 5px var(--color-roxo);
+    text-align: center;
+}
+
+footer img{
+    width: 200px;
+}
+
+.flexfooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid var(--color-azul4);
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-azul);
+    color: var(--color-white);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+
+footer .line-footer p i{
+    color: var(--color-white);
+    font-size: 22px;
+    flex-direction: row;
+}
+
+footer .line-footer p a{
+    color: var(--color-white);
+    padding: 0 0 0 15px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: var(--color-azul4);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-azul3);
+}
+
+
+
+/* Deixando o site responsivo para aparelhos como celular */
+@media screen and (max-width: 1314px) {
+    /* Header */
+    .navegacao_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-azul);
+        height: 150%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    .botao_header{
+        display: block;
+    }
+
+    /* Banners */
+    .bannerservicos{
+        height: 150px;
+    }
+
+    .bannerquemsomos{
+        height: 150px;
+    }
+
+    .bannercasos{
+        height: 150px;
+    }
+
+    .bannercontato{
+        height: 150px;
+    }
+
+    /* Serviços - Home */
+    .bloco{
+        width: 500px;
+        height: 500px;
+    }
+
+    .text{
+        color: var(--color-azul2);
+        font-size: 38px;
+        text-align: center;
+    }
+
+    section.servicos{
+        display: inline;
+        box-shadow: none;
+    }
+
+    section.textobloco{
+        padding: 0 10% 10%;
+    }
+
+    /* Quem Somos - Home */
+    .textoquemsomos{
+        font-size: 40px;
+        padding: 3%;
+    }
+
+    .blocoquemsomos{
+        width: 300px;
+        height: 250px;
+    }
+
+    section.quemsomos p{
+        font-size: 30px;
+    }
+
+    .textoquemsomos2{
+        font-size: 40px;
+        padding: 15% 0 5% 0;
+    }
+
+    .blocoquemsomos h2{
+        font-size: 23px;
+    }
+
+    .blocoquemsomos img{
+        width: 150px;
+        padding: 5%;
+    }
+
+    /* Casos */
+    .textcasos{
+        font-size: 30px;
+        padding: 7%;
+    }
+    
+    .blococasos{
+        width: 500px;
+        height: 550px;
+    }
+    
+    section.casosh .flexcasos{
+        gap: 45px;
+    }
+    
+    .blococasos h2{
+        font-size: 27px;
+    }
+    
+    .blococasos p{
+        font-size: 16.5px;
+    }
+
+    /* Mapa */
+    .mapbox{
+        width: 500px;
+        height: 350px;
+    }
+    
+    .textmap{
+        font-size: 34px;
+        padding: 6% 0 4% 0;
+    }
+    
+    .endmap{
+        font-size: 22px;
+        padding: 3% 0 5% 0;
+    }
+
+    /* Serviços */
+    .servico1{
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .servico3{
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .servico2{
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .blocopgs{
+        padding: 3% 0 3% 0;
+    }
+
+    .blocopgs img{
+        width: 500px;
+    }
+
+    .textserv h2{
+        font-size: 25px;
+        padding: 8% 0 2% 0;
+    }
+
+    .textserv p{
+        padding: 0 2% 3% 2%;
+    }
+
+    /* Quem Somos */
+    .qsluke{
+        padding: none;
+    }
+    .img{
+        padding: 5% 1.5% 5% 5%;
+    }
+
+    .imgfelipe{
+        padding: 5% 5% 5% 1.5%;
+    }
+
+    .textqs{
+        padding: 5% 5% 5% 1.5%;
+    }
+
+    .textqsfelipe{
+        padding: 5% 1.5% 5% 5%;
+    }
+
+    .qsluke img{
+        width: 350px;
+    }
+    
+    .qsluke .textqs h2{
+        font-size: 25px;
+    }
+    
+    .qsluke .textqs h1{
+        font-size: 20px;
+    }
+    
+    .qsluke .textqs p{
+        font-size: 18px;
+    }
+    
+    .qsfelipe img{
+        width: 350px;
+    }
+    
+    .qsfelipe .textqsfelipe h2{
+        font-size: 25px;
+    }
+    
+    .qsfelipe .textqsfelipe h1{
+        font-size: 20px;
+    }
+    
+    .qsfelipe .textqsfelipe p{
+        font-size: 18px;
+    }
+    
+    .qspedro img{
+        width: 350px;
+    }
+    
+    .qspedro .textqs h2{
+        font-size: 25px;
+    }
+    
+    .qspedro .textqs h1{
+        font-size: 20px;
+    }
+    
+    .qspedro .textqs p{
+        font-size: 18px;
+    }
+
+    /* Casos - Extras */
+    section.senai h2{
+        padding: 0 5% 5% 5%;
+    }
+    
+    section.senai p{
+        padding: 0 2% 6% 2%;
+    }
+
+    section.lego h2{
+        padding: 0 5% 5% 5%;
+    }
+    
+    section.lego p{
+        padding: 0 2% 6% 2%;
+    }
+
+    section.master h2{
+        padding: 0 5% 5% 5%;
+    }
+    
+    section.master p{
+        padding: 0 2% 6% 2%;
+    }
+
+    /* Formulário de Contato */
+    .textform{
+        font-size: 30px;
+    }
+
+    form{
+        max-width: 400px;
+    }
+
+    form input, form textarea{
+        font-size: 18px;
+    }
+
+    form .btn-enviar input{
+        width: 120px;
+        font-weight: 600;
+    }
+
+    /* Footer */
+    footer img{
+        padding: 5%;
+    }
+
+    .flexfooter{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}
+
+/* Deixando o site responsivo para aparelhos como celular */
+@media screen and (max-width: 780px) {
+    /* Header */
+    .navegacao_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-azul);
+        height: 150%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    .botao_header{
+        display: block;
+    }
+
+    /* Banners */
+    .bannerservicos{
+        height: 75px;
+    }
+
+    .bannerquemsomos{
+        height: 75px;
+    }
+
+    .bannercasos{
+        height: 75px;
+    }
+
+    .bannercontato{
+        height: 75px;
+    }
+
+    /* Serviços - Home */
+    .bloco{
+        width: 300px;
+        height: 200px;
+    }
+
+    .text{
+        font-size: 30px;
+    }
+
+    section.servicos .flexservicos{
+        display: inline-flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        
+    .bloco .cima{
+        font-size: 2em;
+    }
+
+    .bloco .cima2{
+        font-size: 2em;
+    }
+
+    .bloco .cima h2{
+        font-size: 12px;
+        padding: 2% 0 2%;
+    }
+
+    .bloco .cima2 h2{
+        font-size: 12px;
+        padding: 3% 0 3%;
+    }
+
+    .bloco .baixo p{
+        font-size: 13px;
+        padding: 6%;
+    }
+
+    .bloco .baixo2 p{
+        font-size: 13px;
+        padding: 6%;
+    }
+
+    section.textobloco{
+        padding: 2% 7% 5% 7%;
+    }
+
+    section.textobloco p{
+        font-size: 14px;
+        padding: 1% 0 8%;
+    }
+
+    .btn-servicos button{
+        width: 300px;
+        height: 30px;
+        font-size: 9px;
+    }
+
+    /* Quem Somos - Home */
+    section.quemsomos{
+        box-shadow: 0 0 15px var(--color-azul5);
+    }
+
+    .blocoquemsomos{
+        width: 250px;
+        height: 220px;
+        border-radius: 40px;
+        padding: 0;
+        line-height: 0%;
+    }
+
+    section.quemsomos .flexquemsomos{
+        display: inline-flex;
+        flex-direction: column;
+        padding: 9px 9% 6%;
+        gap: 2px;
+    }
+
+    .textoquemsomos{
+        font-size: 20px;
+        padding: 3%;
+    }
+
+    section.quemsomos p{
+        font-size: 15px;
+    }
+
+    .textoquemsomos2{
+        font-size: 20px;
+    }
+
+    .blocoquemsomos h2{
+        font-size: 17px;
+        padding: 8%;
+    }
+
+    .blocoquemsomos img{
+        width: 100px;
+    }
+    
+    .blocoquemsomos i{
+        font-size: 27px;
+    }
+    
+    /* Casos */
+    .textcasos{
+        font-size: 30px;
+        padding: 7%;
+    }
+    
+    .blococasos{
+        width: 300px;
+        height: 400px;
+    }
+    
+    section.casosh .flexcasos{
+        display: inline-flex;
+        flex-direction: column;
+        padding: 9px 9% 6%;
+        gap: 30px;
+    }
+    
+    .blococasos h2{
+        font-size: 30px;
+    }
+    
+    .blococasos p{
+        font-size: 16px;
+    }
+
+    /* Mapa */
+    .mapbox{
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 0 17px var(--color-azul4);
+    }
+    
+    .textmap{
+        font-size: 20px;
+        padding: 6% 0 6% 0;
+    }
+    
+    .endmap{
+        font-size: 12px;
+        padding: 4% 0 7% 0;
+    }    
+
+    /* Serviços */
+    .servico1{
+        flex-direction: column;
+    }
+
+    .servico3{
+        flex-direction: column;
+    }
+
+    .servico2{
+        flex-direction: column;
+    }
+
+    .blocopgs img{
+        width: 300px;
+    }
+
+    .textserv h2{
+        font-size: 20px;
+    }
+
+    .textserv p{
+        font-size: 15px;
+        padding: 3% 2% 5% 2%;
+    }
+
+    .textserv button{
+        width: 300px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    /* Quem Somos */
+    .img{
+        padding: 5%;
+    }
+
+    .imgfelipe{
+        padding: 5%;
+    }
+
+    .textqs{
+        padding: 5%;
+    }
+
+    .textqsfelipe{
+        padding: 5%;
+    }
+    .qsluke{
+        flex-direction: column;
+    }
+    
+    .qsluke img{
+        width: 300px;
+    }
+
+    .qsluke .textqs h1{
+        padding: 3% 1% 3% 1%;
+    }
+    
+    .qsluke .textqs p{
+        padding: 2% 1% 5% 1%;
+    }
+    
+    .qsfelipe{
+        flex-direction: column-reverse;
+    }
+    
+    .qsfelipe img{
+        width: 300px;
+    }
+
+    .qsfelipe .textqsfelipe h1{
+        padding: 3% 1% 3% 1%;
+    }
+    
+    .qsfelipe .textqsfelipe p{
+        padding: 2% 1% 5% 1%;
+    }
+    
+    .qspedro{
+        flex-direction: column;
+    }
+    
+    .qspedro img{
+        width: 300px;
+    }
+    
+    .qspedro .textqs h1{
+        padding: 3% 1% 3% 1%;
+    }
+    
+    .qspedro .textqs p{
+        padding: 2% 1% 5% 1%;
+    }
+    
+    ul.btns li{
+        width: 40px;
+        height: 40px;
+    }
+    
+    ul.btns li .icon{
+        font-size: 1em;
+    }
+
+    /* Casos */
+    section.casos .flexc{
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 2% 0 2% 0;
+    }
+
+    .imgs{
+        padding: 4%;
+    }
+
+    .casos p{
+        font-size: 14px;
+        padding: 2%;
+    }
+
+    .casos h1{
+        padding: 5% 0 5% 0;
+        font-size: 15px;
+    }
+
+    /* Casos - Extras */
+    section.senai{
+        padding: 2% 5% 9% 5%;
+    }
+
+    section.senai h2{
+        font-size: 27px;
+        padding: 5% 5% 7% 5%;
+    }
+    
+    section.senai p{
+        font-size: 18px;
+        padding: 0 2% 8% 2%;
+    }
+
+    section.lego{
+        padding: 2% 5% 9% 5%;
+    }
+
+    section.lego h2{
+        font-size: 27px;
+        padding: 5% 5% 7% 5%;
+    }
+    
+    section.lego p{
+        font-size: 18px;
+        padding: 0 2% 8% 2%;
+    }
+
+    section.master{
+        padding: 2% 5% 9% 5%;
+    }
+
+    section.master h2{
+        font-size: 27px;
+        padding: 5% 5% 7% 5%;
+    }
+    
+    section.master p{
+        font-size: 18px;
+        padding: 0 2% 8% 2%;
+    }
+
+    .btn-casos button{
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }    
+    
+    /* Formulário de Contato */
+    section.formulario{
+        padding: 10% 0.25% 10% 0.25%;
+    }
+    
+    .textform{
+        font-size: 25px;
+    }
+    
+    form{
+        max-width: 180px;
+        align-items: center;
+    }
+    
+    form input, form textarea{
+        font-size: 15px;
+    }
+
+    form .btn-enviar input{
+        width: 90px;
+        font-weight: 600;
+    }
+
+    /* Footer */
+    footer img{
+        padding: 5%;
+    }
+
+    .flexfooter{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}
+
+/* Criando a animação da barra lateral */
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
